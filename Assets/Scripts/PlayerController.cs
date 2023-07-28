@@ -13,10 +13,13 @@ public class PlayerController : MonoBehaviour
     Vector2 sight;
     Vector3 velocity;
     CharacterController characterController;
+    GameObject torch;
 
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
+        torch = GameObject.Find("TorchPlayer");
+        torch.SetActive(false);
     }
 
     void Start()
@@ -60,5 +63,13 @@ public class PlayerController : MonoBehaviour
     {
         var gravity = playerMass * Time.deltaTime * Physics.gravity;
         velocity.y = characterController.isGrounded ? -1f : velocity.y + gravity.y;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "StartPoint")
+        {
+            torch.SetActive(true);
+        }
     }
 }

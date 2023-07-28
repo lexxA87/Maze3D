@@ -302,7 +302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 92051300, guid: 1cb8121b01a6acb4880b8b12b406e87f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3276358300877789958, guid: 1cb8121b01a6acb4880b8b12b406e87f, type: 3}
       propertyPath: m_Name
@@ -622,6 +622,14 @@ PrefabInstance:
     - target: {fileID: 4929109050132993193, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929109050477149298, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
+      propertyPath: m_Name
+      value: TorchPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929109050477149298, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
