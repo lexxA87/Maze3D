@@ -576,32 +576,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 253615523}
     m_Modifications:
     - target: {fileID: 4929109050132993192, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
-    - target: {fileID: 4929109050132993192, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4929109050132993192, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4929109050132993193, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4929109050132993193, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4929109050132993193, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4929109050132993193, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4929109050132993193, guid: 6331b5cf99304d54ab5f8ec3562589c4, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,6 +5,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float mouseSensitivity = 3f;
     [SerializeField] float speedMovement = 5f;
     [SerializeField] float playerMass = 1f;
+    [Header("Camera")]
+    [SerializeField][Range(0f, 89f)] float upAngle = 15f;
+    [SerializeField][Range(0f, 89f)] float downAngle = 15f;
     [SerializeField] Transform cameraTransform;
 
     Vector2 sight;
@@ -33,7 +36,7 @@ public class PlayerController : MonoBehaviour
         sight.x += Input.GetAxis("Mouse X") * mouseSensitivity;
         sight.y += Input.GetAxis("Mouse Y") * mouseSensitivity;
 
-        sight.y = Mathf.Clamp(sight.y, -89.0f, 89.0f);
+        sight.y = Mathf.Clamp(sight.y, -upAngle, downAngle);
 
         cameraTransform.localRotation = Quaternion.Euler(-sight.y, 0, 0);
         transform.localRotation = Quaternion.Euler(0, sight.x, 0);
