@@ -76,5 +76,9 @@ public class PlayerController : MonoBehaviour
         {
             torch.SetActive(true);
         }
+        if (other.CompareTag("Finish"))
+        {
+            Debug.Log("Player: Game over. I win!");
+        }
     }
 }
