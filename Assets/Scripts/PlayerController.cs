@@ -65,9 +65,14 @@ public class PlayerController : MonoBehaviour
         velocity.y = characterController.isGrounded ? -1f : velocity.y + gravity.y;
     }
 
+    public void SetStartPosition(Vector3 _position)
+    {
+        transform.position = _position;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "StartPoint")
+        if (other.CompareTag("Start"))
         {
             torch.SetActive(true);
         }
